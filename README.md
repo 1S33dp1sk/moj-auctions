@@ -11,6 +11,8 @@ it feels slow. This project decouples the two halves:
 - a **static Next.js site** serves that snapshot from a CDN with optimized,
   lazy‑loaded images, instant client‑side search/filter, and live countdowns.
 
+
+k
 The result loads and filters instantly while showing the same data: full vehicle
 specs, the court/case block, prices, dates, and photos — for every auction that
 is **currently running or upcoming** (finished auctions are dropped).
