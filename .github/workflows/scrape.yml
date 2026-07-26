@@ -1,0 +1,60 @@
+name: Snapshot MOJ auctions
+
+# Scheduled snapshot refresh. Runs the Playwright scraper (which CAN reach
+# auctions.moj.gov.jo from GitHub's runners), commits the new data + photos,
+# and that commit triggers your Vercel/Netlify redeploy automatically.
+on:
+  schedule:
+    - cron: '0 */6 * * *' # every 6 hours (UTC)
+  workflow_dispatch: {} # manual "Run workflow" button
+
+# Allow the workflow to push the refreshed snapshot back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: Run scraper
+        id: scrape
+        continue-on-error: true # a stale token shouldn't fail the whole run
+        env:
+          MOJ_AUCTIONS_URL: ${{ secrets.MOJ_AUCTIONS_URL }}
+          SCRAPE_IMAGES: '1'
+        run: node scraper/scrape.mjs
+
+      - name: Report stale token
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::warning::Scraper did not complete (exit != 0). The token in the MOJ_AUCTIONS_URL secret is most likely expired. Refresh it in repo Settings → Secrets → Actions. The site keeps serving the previous snapshot until then."
+
+      - name: Commit snapshot
+        run: |
+          git config user.name  "auction-snapshot-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/auctions.json public/car-images
+          if git diff --cached --quiet; then
+            echo "No changes in this snapshot."
+          else
+            git commit -m "chore: refresh auctions snapshot ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi

@@ -1,0 +1,11 @@
+# Netlify deploy config. The site is a static Next.js export, so we simply
+# build and publish the generated `out/` directory.
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Playwright/sharp are only needed by the scraper (run in GitHub Actions),
+  # not by the site build, so skip Playwright's browser download here.
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"

@@ -1,0 +1,27 @@
+{
+  "name": "moj-auctions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fast, modern mirror of the Jordanian MOJ electronic vehicle auctions (المزادات الإلكترونية) — a snapshot-driven Next.js site plus a Playwright scraper.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:seed": "node scripts/build-seed.mjs",
+    "scrape": "node scraper/scrape.mjs",
+    "postinstall": "node -e \"process.exit(0)\""
+  },
+  "dependencies": {
+    "next": "^14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.19",
+    "playwright": "1.45.3",
+    "postcss": "8.4.39",
+    "sharp": "0.33.4",
+    "tailwindcss": "3.4.7"
+  }
+}

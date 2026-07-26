@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-50 text-ink-900 antialiased;
+  background-image:
+    radial-gradient(60rem 60rem at 100% -10%, rgba(196, 132, 47, 0.06), transparent 60%),
+    radial-gradient(50rem 50rem at -10% 0%, rgba(19, 32, 48, 0.05), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Numeric fields (plate, chassis, prices) read better LTR even inside RTL. */
+.ltr-nums {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+/* Thin, tasteful scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.ink.300') transparent;
+}
+*::-webkit-scrollbar { height: 8px; width: 8px; }
+*::-webkit-scrollbar-thumb { background: theme('colors.ink.300'); border-radius: 9999px; }
+
+/* Card image placeholder gradient */
+.placeholder-grid {
+  background-color: theme('colors.ink.100');
+  background-image:
+    linear-gradient(135deg, rgba(19,32,48,0.06) 25%, transparent 25%),
+    linear-gradient(225deg, rgba(19,32,48,0.06) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(19,32,48,0.06) 25%, transparent 25%),
+    linear-gradient(315deg, rgba(19,32,48,0.06) 25%, transparent 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
