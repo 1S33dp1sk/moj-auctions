@@ -251,31 +251,31 @@ function applyMedia(rec, m) {
  */
 async function scrapeMedia(page, rec) {
   await page.goto(LIST_URL, { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(600);
+  // Wait for the repeater's detail links to actually render (avoids a race).
+  await page.waitForSelector('a[href*="lbtnViewAllImages"], a[href*="lbtnDetails"]', { timeout: 20000 });
 
-  // navigate to the auction's list page
-  for (let p = 1; p < (rec._page || 1); p++) {
-    const prev = await page.evaluate(firstCardId);
-    let ok = await clickPager(page, String(p + 1));
-    if (!ok) ok = await clickPager(page, '»');
-    if (!ok) break;
-    await waitAdvance(page, prev);
-  }
-
-  // open this auction's detail view
+  // The detail page is selected by the shared #hdnCurrentAuctionID field — the
+  // server reads THAT on postback, not the specific card. So we can open ANY
+  // auction straight from page 1 (no pagination): set the id, strip the anchor's
+  // onclick (which would otherwise reset the id to its own card), then click it.
+  // We click a real anchor (not __doPostBack directly) because the site's AJAX
+  // PageRequestManager throws if __doPostBack is invoked from injected strict code.
   const clicked = await page.evaluate((id) => {
     const a = Array.from(document.querySelectorAll('a')).find(
-      (x) => (x.getAttribute('onclick') || '').includes(`SetCurrentAuctionID(${id})`) &&
-             /lbtnDetails|lbtnViewAllImages/.test(x.getAttribute('href') || '')
+      (x) => /lbtnViewAllImages|lbtnDetails/.test(x.getAttribute('href') || '')
     );
-    if (!a) return false;
+    const hid = document.getElementById('hdnCurrentAuctionID');
+    if (!a || !hid) return false;
+    a.removeAttribute('onclick');
+    a.onclick = null;
+    hid.value = String(id);
     a.click();
     return true;
   }, rec.id);
-  if (!clicked) throw new Error('details link not found on page');
+  if (!clicked) throw new Error('could not trigger detail postback');
 
-  await page.waitForURL(/AuctionDetails\.aspx/, { timeout: 20000 });
-  await page.waitForTimeout(700);
+  await page.waitForURL(/AuctionDetails\.aspx/, { timeout: 25000 });
+  await page.waitForTimeout(800);
 
   const TABS = [
     { key: 'photos', hash: '#tabImage', box: '#tabImage' },
