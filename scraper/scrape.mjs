@@ -20,8 +20,8 @@
  * Config (env):
  *   MOJ_AUCTIONS_URL  full tokened list URL (preferred), OR
  *   MOJ_TOKEN         just the token value (URL is built for you)
- *   SCRAPE_IMAGES     "0" to skip photo download (data only). Default "1".
- *   SCRAPE_ANNOUNCEMENT "1" to also save the sale-notice image. Default "0".
+ *   SCRAPE_IMAGES     "0" to skip ALL media (data only). Default "1".
+ *   SCRAPE_REPORT     "0" to skip the heavy تقرير الخبرة scans. Default "1".
  *   SCRAPE_MAX_PAGES  cap pages (debug). Default: all.
  *   HEADLESS          "0" to watch it run. Default headless.
  *   NOW_ISO           override "now" for status derivation. Default: run time.
@@ -40,8 +40,8 @@ const TOKEN = process.env.MOJ_TOKEN || '';
 const LIST_URL =
   process.env.MOJ_AUCTIONS_URL ||
   (TOKEN ? `https://auctions.moj.gov.jo/AuctionsList.aspx?token=${TOKEN}` : '');
-const WANT_IMAGES = process.env.SCRAPE_IMAGES !== '0';
-const WANT_ANNOUNCE = process.env.SCRAPE_ANNOUNCEMENT === '1';
+const WANT_IMAGES = process.env.SCRAPE_IMAGES !== '0'; // master switch for all media
+const WANT_REPORT = process.env.SCRAPE_REPORT !== '0'; // تقرير الخبرة (heavy); set 0 to skip
 const MAX_PAGES = process.env.SCRAPE_MAX_PAGES ? parseInt(process.env.SCRAPE_MAX_PAGES, 10) : Infinity;
 const HEADLESS = process.env.HEADLESS !== '0';
 const NOW_ISO = process.env.NOW_ISO || new Date().toISOString();
@@ -160,23 +160,21 @@ async function main() {
   const active = filterActive(records);
   console.log(`▶ ${active.length} active (live/upcoming) of ${records.length} total.`);
 
-  // --- Phase B: images ------------------------------------------------------
+  // --- Phase B: media (الصور / تقرير الخبرة / الاعلان) -----------------------
   const imagesDir = join(ROOT, 'public', 'car-images');
   if (WANT_IMAGES) {
     await mkdir(imagesDir, { recursive: true });
     let done = 0;
     for (const rec of active) {
       try {
-        const saved = await scrapeImages(page, rec);
-        rec.images = saved;
-        rec.hasImages = saved.length > 0;
+        const m = await scrapeMedia(page, rec);
+        applyMedia(rec, m);
       } catch (err) {
-        console.warn(`  ! images failed for ${rec.id}: ${err.message}`);
-        rec.images = [];
-        rec.hasImages = false;
+        console.warn(`  ! media failed for ${rec.id}: ${err.message}`);
+        applyMedia(rec, { photos: [], report: [], announcement: [] });
       }
       done++;
-      if (done % 5 === 0 || done === active.length) console.log(`  · images ${done}/${active.length}`);
+      if (done % 5 === 0 || done === active.length) console.log(`  · media ${done}/${active.length}`);
     }
   }
 
@@ -190,7 +188,9 @@ async function main() {
       pagesScraped: pageNum,
       totalCaptured: records.length,
       activeCount: active.length,
-      withImages: active.filter((a) => a.hasImages).length,
+      withPhotos: active.filter((a) => a.hasPhotos).length,
+      withReport: active.filter((a) => a.hasReport).length,
+      withAnnouncement: active.filter((a) => a.hasAnnouncement).length,
     },
     auctions: active.map(stripInternal),
   };
@@ -214,7 +214,10 @@ async function main() {
     } catch { /* dir may not exist yet */ }
   }
 
-  console.log(`✔ Wrote data/auctions.json — ${active.length} active, ${dataset.meta.withImages} with photos.`);
+  console.log(
+    `✔ Wrote data/auctions.json — ${active.length} active · ` +
+    `${dataset.meta.withPhotos} with photos, ${dataset.meta.withReport} with reports, ${dataset.meta.withAnnouncement} with notices.`
+  );
   await browser.close();
 }
 
@@ -223,17 +226,34 @@ function stripInternal(r) {
   return rest;
 }
 
+function applyMedia(rec, m) {
+  rec.photos = m.photos || [];
+  rec.report = m.report || [];
+  rec.announcement = m.announcement || [];
+  rec.images = rec.photos; // card thumbnail alias
+  rec.hasPhotos = rec.photos.length > 0;
+  rec.hasReport = rec.report.length > 0;
+  rec.hasAnnouncement = rec.announcement.length > 0;
+  rec.hasImages = rec.hasPhotos;
+}
+
 /**
- * Open one auction's detail view and save its car photos.
+ * Open one auction's detail view and save ALL three media tabs:
+ *   الصور (#tabImage)            → car photos
+ *   تقرير الخبرة (#tabReport)     → expert valuation report pages
+ *   الاعلان (#tabImageAnnouncment)→ official sale-notice image(s)
+ *
  * We reload the list, jump to the auction's page, then click the item whose
  * onclick carries SetCurrentAuctionID(<id>) — ctl indices repeat per page, but
- * the auction id is unique, so we match on that.
+ * the auction id is unique, so we match on that. Each tab is activated first
+ * (some images are lazy) and both inline base64 and same-origin URL images are
+ * captured (URL images are fetched in the page's authenticated session).
  */
-async function scrapeImages(page, rec) {
+async function scrapeMedia(page, rec) {
   await page.goto(LIST_URL, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(600);
 
-  // navigate to the auction's page
+  // navigate to the auction's list page
   for (let p = 1; p < (rec._page || 1); p++) {
     const prev = await page.evaluate(firstCardId);
     let ok = await clickPager(page, String(p + 1));
@@ -242,7 +262,7 @@ async function scrapeImages(page, rec) {
     await waitAdvance(page, prev);
   }
 
-  // click this auction's "attachments & images" link
+  // open this auction's detail view
   const clicked = await page.evaluate((id) => {
     const a = Array.from(document.querySelectorAll('a')).find(
       (x) => (x.getAttribute('onclick') || '').includes(`SetCurrentAuctionID(${id})`) &&
@@ -255,45 +275,59 @@ async function scrapeImages(page, rec) {
   if (!clicked) throw new Error('details link not found on page');
 
   await page.waitForURL(/AuctionDetails\.aspx/, { timeout: 20000 });
-  await page.waitForTimeout(800);
+  await page.waitForTimeout(700);
 
-  // pull base64 car photos (+ optional announcement) from the DOM
-  const dataUris = await page.evaluate((wantAnnounce) => {
-    const grab = (sel) =>
-      Array.from(document.querySelectorAll(`${sel} img`))
-        .map((i) => i.currentSrc || i.src)
-        .filter((s) => s && s.startsWith('data:image'));
-    let list = grab('#tabImage');
-    if (list.length === 0) {
-      // fallback: any large embedded photo (car photos are ~1200x1600)
-      list = Array.from(document.querySelectorAll('img'))
-        .filter((i) => i.naturalWidth >= 900 && (i.src || '').startsWith('data:image'))
-        .map((i) => i.src);
-    }
-    if (wantAnnounce) list = list.concat(grab('#tabImageAnnouncment'));
-    return list;
-  }, WANT_ANNOUNCE);
+  const TABS = [
+    { key: 'photos', hash: '#tabImage', box: '#tabImage' },
+    { key: 'report', hash: '#tabReport', box: '#tabReport' },
+    { key: 'announcement', hash: '#tabImageAnnouncment', box: '#tabImageAnnouncment' },
+  ];
+  if (!WANT_REPORT) TABS.splice(1, 1); // report is heavy; opt-in via SCRAPE_REPORT
 
-  if (dataUris.length === 0) return [];
-
+  const media = { photos: [], report: [], announcement: [] };
   const dir = join(ROOT, 'public', 'car-images', rec.id);
   await rm(dir, { recursive: true, force: true });
-  await mkdir(dir, { recursive: true });
 
-  const saved = [];
-  for (let i = 0; i < dataUris.length; i++) {
-    const b64 = dataUris[i].split(',')[1];
-    if (!b64) continue;
-    const buf = Buffer.from(b64, 'base64');
-    const out = join(dir, `${i + 1}.jpg`);
-    await sharp(buf)
-      .rotate()
-      .resize({ width: 1280, height: 1280, fit: 'inside', withoutEnlargement: true })
-      .jpeg({ quality: 80, mozjpeg: true })
-      .toFile(out);
-    saved.push(`/car-images/${rec.id}/${i + 1}.jpg`);
+  for (const tab of TABS) {
+    // activate the tab (forces lazy images to load), then collect data URIs
+    const uris = await page.evaluate(async ({ hash, box }) => {
+      const btn = Array.from(document.querySelectorAll('a')).find((a) => (a.getAttribute('href') || '') === hash);
+      if (btn) btn.click();
+      await new Promise((r) => setTimeout(r, 500));
+      const imgs = Array.from(document.querySelectorAll(`${box} img`));
+      const out = [];
+      for (const im of imgs) {
+        const s = im.currentSrc || im.src || '';
+        if (s.startsWith('data:image')) { out.push(s); continue; }
+        if (/^https?:/.test(s)) {
+          if (/logo\.png|noimage/i.test(s)) continue;
+          try {
+            const blob = await fetch(s, { credentials: 'include' }).then((r) => r.blob());
+            const dataUrl = await new Promise((res) => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(blob); });
+            out.push(dataUrl);
+          } catch { /* skip unreachable image */ }
+        }
+      }
+      return out;
+    }, tab);
+
+    if (uris.length === 0) continue;
+    const subdir = join(dir, tab.key);
+    await mkdir(subdir, { recursive: true });
+    for (let i = 0; i < uris.length; i++) {
+      const b64 = uris[i].split(',')[1];
+      if (!b64) continue;
+      const buf = Buffer.from(b64, 'base64');
+      const out = join(subdir, `${i + 1}.jpg`);
+      await sharp(buf)
+        .rotate()
+        .resize({ width: 1400, height: 1400, fit: 'inside', withoutEnlargement: true })
+        .jpeg({ quality: 80, mozjpeg: true })
+        .toFile(out);
+      media[tab.key].push(`/car-images/${rec.id}/${tab.key}/${i + 1}.jpg`);
+    }
   }
-  return saved;
+  return media;
 }
 
 main().catch((err) => {

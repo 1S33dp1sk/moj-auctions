@@ -15,8 +15,17 @@ export default function HomeClient({ auctions, meta }) {
   const [brands, setBrands] = useState([]);
   const [fuels, setFuels] = useState([]);
   const [cities, setCities] = useState([]);
+  const [yearFrom, setYearFrom] = useState('');
+  const [yearTo, setYearTo] = useState('');
+  const [priceFrom, setPriceFrom] = useState('');
+  const [priceTo, setPriceTo] = useState('');
   const [sort, setSort] = useState('ending');
   const [showFilters, setShowFilters] = useState(false);
+
+  const years = useMemo(() => {
+    const set = new Set(auctions.map((a) => a.year).filter(Boolean));
+    return [...set].sort((a, b) => b - a);
+  }, [auctions]);
 
   const facets = useMemo(() => {
     const b = new Map(), f = new Map(), c = new Map();
@@ -36,6 +45,10 @@ export default function HomeClient({ auctions, meta }) {
       if (brands.length && !brands.includes(a.brand)) return false;
       if (fuels.length && !fuels.includes(a.fuel)) return false;
       if (cities.length && !cities.includes(a.city)) return false;
+      if (yearFrom && (a.year == null || a.year < +yearFrom)) return false;
+      if (yearTo && (a.year == null || a.year > +yearTo)) return false;
+      if (priceFrom && (a.startValue == null || a.startValue < +priceFrom)) return false;
+      if (priceTo && (a.startValue == null || a.startValue > +priceTo)) return false;
       if (needle) {
         const hay = [a.type, a.brand, a.plate, a.chassis, a.court, a.caseNo, a.city, a.color, a.year]
           .filter(Boolean).join(' ').toLowerCase();
@@ -53,13 +66,17 @@ export default function HomeClient({ auctions, meta }) {
       }
     });
     return list;
-  }, [auctions, q, status, brands, fuels, cities, sort]);
+  }, [auctions, q, status, brands, fuels, cities, yearFrom, yearTo, priceFrom, priceTo, sort]);
 
   const toggle = (setter, arr) => (v) =>
     setter(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v]);
 
-  const activeFilterCount = brands.length + fuels.length + cities.length + (status !== 'all' ? 1 : 0);
-  const clearAll = () => { setQ(''); setStatus('all'); setBrands([]); setFuels([]); setCities([]); };
+  const rangeActive = (yearFrom || yearTo ? 1 : 0) + (priceFrom || priceTo ? 1 : 0);
+  const activeFilterCount = brands.length + fuels.length + cities.length + (status !== 'all' ? 1 : 0) + rangeActive;
+  const clearAll = () => {
+    setQ(''); setStatus('all'); setBrands([]); setFuels([]); setCities([]);
+    setYearFrom(''); setYearTo(''); setPriceFrom(''); setPriceTo('');
+  };
 
   const liveCount = auctions.filter((a) => a.status === 'live').length;
   const upcomingCount = auctions.filter((a) => a.status === 'upcoming').length;
@@ -119,10 +136,30 @@ export default function HomeClient({ auctions, meta }) {
           </div>
 
           {showFilters && (
-            <div className="mt-3 grid gap-4 rounded-xl border border-ink-200 bg-white p-4 sm:grid-cols-3">
-              <FacetGroup title="الماركة" items={facets.brands} selected={brands} onToggle={toggle(setBrands, brands)} />
-              <FacetGroup title="نوع الوقود" items={facets.fuels} selected={fuels} onToggle={toggle(setFuels, fuels)} />
-              <FacetGroup title="المحافظة / المحكمة" items={facets.cities} selected={cities} onToggle={toggle(setCities, cities)} />
+            <div className="mt-3 space-y-4 rounded-xl border border-ink-200 bg-white p-4">
+              <div className="grid gap-4 sm:grid-cols-3">
+                <FacetGroup title="الماركة" items={facets.brands} selected={brands} onToggle={toggle(setBrands, brands)} />
+                <FacetGroup title="نوع الوقود" items={facets.fuels} selected={fuels} onToggle={toggle(setFuels, fuels)} />
+                <FacetGroup title="المحافظة / المحكمة" items={facets.cities} selected={cities} onToggle={toggle(setCities, cities)} />
+              </div>
+              <div className="grid gap-4 border-t border-ink-100 pt-4 sm:grid-cols-2">
+                <div>
+                  <h4 className="mb-2 text-xs font-bold uppercase tracking-wide text-ink-400">سنة الصنع</h4>
+                  <div className="flex items-center gap-2">
+                    <YearSelect value={yearFrom} onChange={setYearFrom} years={years} placeholder="من" />
+                    <span className="text-ink-300">—</span>
+                    <YearSelect value={yearTo} onChange={setYearTo} years={years} placeholder="إلى" />
+                  </div>
+                </div>
+                <div>
+                  <h4 className="mb-2 text-xs font-bold uppercase tracking-wide text-ink-400">السعر الابتدائي (د.أ)</h4>
+                  <div className="flex items-center gap-2">
+                    <NumInput value={priceFrom} onChange={setPriceFrom} placeholder="من" />
+                    <span className="text-ink-300">—</span>
+                    <NumInput value={priceTo} onChange={setPriceTo} placeholder="إلى" />
+                  </div>
+                </div>
+              </div>
             </div>
           )}
         </div>
@@ -213,6 +250,33 @@ function FacetGroup({ title, items, selected, onToggle }) {
         })}
       </div>
     </div>
+  );
+}
+
+function YearSelect({ value, onChange, years, placeholder }) {
+  return (
+    <select
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      className="w-full rounded-lg border border-ink-200 bg-ink-50 px-2.5 py-2 text-sm font-semibold text-ink-700 outline-none focus:border-gold-400 ltr-nums"
+    >
+      <option value="">{placeholder}</option>
+      {years.map((y) => <option key={y} value={y}>{y}</option>)}
+    </select>
+  );
+}
+
+function NumInput({ value, onChange, placeholder }) {
+  return (
+    <input
+      type="number"
+      inputMode="numeric"
+      min="0"
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      placeholder={placeholder}
+      className="w-full rounded-lg border border-ink-200 bg-ink-50 px-2.5 py-2 text-sm font-semibold text-ink-700 outline-none focus:border-gold-400 ltr-nums placeholder:text-ink-300"
+    />
   );
 }
 

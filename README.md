@@ -98,10 +98,16 @@ First time only, install the browser Playwright uses:
 npx playwright install chromium
 ```
 
-Options (env vars): `SCRAPE_IMAGES=0` (data only, fast), `SCRAPE_ANNOUNCEMENT=1`
-(also save the sale‑notice image), `SCRAPE_MAX_PAGES=2` (cap while testing),
-`HEADLESS=0` (watch it run). The scraper writes `data/auctions.json` and
-`public/car-images/<id>/*.jpg`, and prunes photos of auctions that have ended.
+For every kept auction the scraper opens the detail view and captures **all
+three media tabs** — الصور (car photos), تقرير الخبرة (the expert valuation report
+scans), and الاعلان (the official sale notice) — saving them under
+`public/car-images/<id>/{photos,report,announcement}/`. On the site, the detail
+page shows them as switchable tabs.
+
+Options (env vars): `SCRAPE_IMAGES=0` (data only, fast), `SCRAPE_REPORT=0` (skip
+the heavy report scans), `SCRAPE_MAX_PAGES=2` (cap while testing), `HEADLESS=0`
+(watch it run). The scraper walks **every** list page, writes `data/auctions.json`,
+and prunes media of auctions that have ended.
 
 ## Scheduled snapshots (automation)
 
@@ -131,7 +137,12 @@ Pages, S3, or any static host.
 `location`, `court`, `city`, `caseNo`, `adType`, `startDate`/`endDate` (ISO,
 Asia/Amman), `publishDate`, `startValue`, `estValue`, `minIncrement`,
 `officialStatus`, `newspaper`, `issue`, `bids`, `status` (`live`/`upcoming`),
-`images[]`, `hasImages`.
+`photos[]`, `report[]`, `announcement[]` (+ `hasPhotos`/`hasReport`/`hasAnnouncement`),
+and `images[]` (alias of `photos`, used for the card thumbnail).
+
+The homepage filters entirely client‑side (instant): free‑text search, live vs
+upcoming, and facet filters for **manufacturer**, fuel, and court, plus
+**year** and **starting‑price** ranges — with sort by ending‑soon / price / year.
 
 ## Notes & disclaimer
 

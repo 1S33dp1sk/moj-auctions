@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-26T20:16:18.851Z",
+    "generatedAt": "2026-07-26T20:43:15.442Z",
     "snapshotAt": "2026-07-26T22:55:00+03:00",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": true,
@@ -44,7 +44,13 @@
       "issue": "20232",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -81,7 +87,13 @@
       "issue": "0",
       "bids": 24,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -118,7 +130,13 @@
       "issue": "20236",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -155,7 +173,13 @@
       "issue": "7850",
       "bids": 2,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -192,7 +216,13 @@
       "issue": "7851",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -229,7 +259,13 @@
       "issue": "20231",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -266,7 +302,13 @@
       "issue": "20229",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -303,7 +345,13 @@
       "issue": "21159",
       "bids": 1,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -340,7 +388,13 @@
       "issue": "0",
       "bids": 0,
       "status": "upcoming",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -377,7 +431,13 @@
       "issue": "21150",
       "bids": 3,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -414,7 +474,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -451,7 +517,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -488,7 +560,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -525,7 +603,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -562,7 +646,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -599,7 +689,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -636,7 +732,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -673,7 +775,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -710,7 +818,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -747,7 +861,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -784,7 +904,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -821,7 +947,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -858,7 +990,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -895,7 +1033,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -932,7 +1076,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -969,7 +1119,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -1006,7 +1162,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -1043,7 +1205,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -1080,7 +1248,13 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     },
     {
@@ -1117,7 +1291,13 @@
       "issue": "20230",
       "bids": 0,
       "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
       "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
       "hasImages": false
     }
   ]
