@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generatedAt": "2026-07-28T13:49:12.380Z",
-    "snapshotAt": "2026-07-28T13:27:03.739Z",
+    "generatedAt": "2026-07-28T19:19:58.407Z",
+    "snapshotAt": "2026-07-28T19:04:00.329Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
-    "pagesScraped": 14,
-    "totalCaptured": 140,
+    "pagesScraped": 38,
+    "totalCaptured": 376,
     "activeCount": 81,
-    "withPhotos": 26,
-    "withReport": 26,
-    "withAnnouncement": 15
+    "withPhotos": 7,
+    "withReport": 7,
+    "withAnnouncement": 6
   },
   "auctions": [
     {
@@ -46,14 +46,31 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
+      "photos": [
+        "/car-images/52734/photos/1.jpg",
+        "/car-images/52734/photos/2.jpg",
+        "/car-images/52734/photos/3.jpg",
+        "/car-images/52734/photos/4.jpg",
+        "/car-images/52734/photos/5.jpg"
+      ],
+      "report": [
+        "/car-images/52734/report/1.jpg",
+        "/car-images/52734/report/2.jpg",
+        "/car-images/52734/report/3.jpg",
+        "/car-images/52734/report/4.jpg"
+      ],
       "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
+      "images": [
+        "/car-images/52734/photos/1.jpg",
+        "/car-images/52734/photos/2.jpg",
+        "/car-images/52734/photos/3.jpg",
+        "/car-images/52734/photos/4.jpg",
+        "/car-images/52734/photos/5.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
       "hasAnnouncement": false,
-      "hasImages": false
+      "hasImages": true
     },
     {
       "id": "52555",
@@ -89,14 +106,35 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
-      "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
-      "hasAnnouncement": false,
-      "hasImages": false
+      "photos": [
+        "/car-images/52555/photos/1.jpg",
+        "/car-images/52555/photos/2.jpg",
+        "/car-images/52555/photos/3.jpg",
+        "/car-images/52555/photos/4.jpg",
+        "/car-images/52555/photos/5.jpg",
+        "/car-images/52555/photos/6.jpg"
+      ],
+      "report": [
+        "/car-images/52555/report/1.jpg",
+        "/car-images/52555/report/2.jpg",
+        "/car-images/52555/report/3.jpg",
+        "/car-images/52555/report/4.jpg"
+      ],
+      "announcement": [
+        "/car-images/52555/announcement/1.jpg"
+      ],
+      "images": [
+        "/car-images/52555/photos/1.jpg",
+        "/car-images/52555/photos/2.jpg",
+        "/car-images/52555/photos/3.jpg",
+        "/car-images/52555/photos/4.jpg",
+        "/car-images/52555/photos/5.jpg",
+        "/car-images/52555/photos/6.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
+      "hasAnnouncement": true,
+      "hasImages": true
     },
     {
       "id": "52577",
@@ -132,14 +170,26 @@
       "issue": "20217",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
-      "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
-      "hasAnnouncement": false,
-      "hasImages": false
+      "photos": [
+        "/car-images/52577/photos/1.jpg",
+        "/car-images/52577/photos/2.jpg"
+      ],
+      "report": [
+        "/car-images/52577/report/1.jpg",
+        "/car-images/52577/report/2.jpg",
+        "/car-images/52577/report/3.jpg"
+      ],
+      "announcement": [
+        "/car-images/52577/announcement/1.jpg"
+      ],
+      "images": [
+        "/car-images/52577/photos/1.jpg",
+        "/car-images/52577/photos/2.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
+      "hasAnnouncement": true,
+      "hasImages": true
     },
     {
       "id": "52554",
@@ -175,14 +225,34 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
-      "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
-      "hasAnnouncement": false,
-      "hasImages": false
+      "photos": [
+        "/car-images/52554/photos/1.jpg",
+        "/car-images/52554/photos/2.jpg",
+        "/car-images/52554/photos/3.jpg",
+        "/car-images/52554/photos/4.jpg",
+        "/car-images/52554/photos/5.jpg"
+      ],
+      "report": [
+        "/car-images/52554/report/1.jpg",
+        "/car-images/52554/report/2.jpg",
+        "/car-images/52554/report/3.jpg",
+        "/car-images/52554/report/4.jpg",
+        "/car-images/52554/report/5.jpg"
+      ],
+      "announcement": [
+        "/car-images/52554/announcement/1.jpg"
+      ],
+      "images": [
+        "/car-images/52554/photos/1.jpg",
+        "/car-images/52554/photos/2.jpg",
+        "/car-images/52554/photos/3.jpg",
+        "/car-images/52554/photos/4.jpg",
+        "/car-images/52554/photos/5.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
+      "hasAnnouncement": true,
+      "hasImages": true
     },
     {
       "id": "52516",
@@ -218,14 +288,37 @@
       "issue": "21128",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
-      "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
-      "hasAnnouncement": false,
-      "hasImages": false
+      "photos": [
+        "/car-images/52516/photos/1.jpg",
+        "/car-images/52516/photos/2.jpg",
+        "/car-images/52516/photos/3.jpg",
+        "/car-images/52516/photos/4.jpg",
+        "/car-images/52516/photos/5.jpg",
+        "/car-images/52516/photos/6.jpg",
+        "/car-images/52516/photos/7.jpg",
+        "/car-images/52516/photos/8.jpg"
+      ],
+      "report": [
+        "/car-images/52516/report/1.jpg",
+        "/car-images/52516/report/2.jpg"
+      ],
+      "announcement": [
+        "/car-images/52516/announcement/1.jpg"
+      ],
+      "images": [
+        "/car-images/52516/photos/1.jpg",
+        "/car-images/52516/photos/2.jpg",
+        "/car-images/52516/photos/3.jpg",
+        "/car-images/52516/photos/4.jpg",
+        "/car-images/52516/photos/5.jpg",
+        "/car-images/52516/photos/6.jpg",
+        "/car-images/52516/photos/7.jpg",
+        "/car-images/52516/photos/8.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
+      "hasAnnouncement": true,
+      "hasImages": true
     },
     {
       "id": "52547",
@@ -605,14 +698,32 @@
       "issue": "20181",
       "bids": 1,
       "status": "live",
-      "photos": [],
-      "report": [],
-      "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
-      "hasAnnouncement": false,
-      "hasImages": false
+      "photos": [
+        "/car-images/52515/photos/1.jpg",
+        "/car-images/52515/photos/2.jpg",
+        "/car-images/52515/photos/3.jpg",
+        "/car-images/52515/photos/4.jpg"
+      ],
+      "report": [
+        "/car-images/52515/report/1.jpg",
+        "/car-images/52515/report/2.jpg",
+        "/car-images/52515/report/3.jpg",
+        "/car-images/52515/report/4.jpg",
+        "/car-images/52515/report/5.jpg"
+      ],
+      "announcement": [
+        "/car-images/52515/announcement/1.jpg"
+      ],
+      "images": [
+        "/car-images/52515/photos/1.jpg",
+        "/car-images/52515/photos/2.jpg",
+        "/car-images/52515/photos/3.jpg",
+        "/car-images/52515/photos/4.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
+      "hasAnnouncement": true,
+      "hasImages": true
     },
     {
       "id": "52609",
@@ -648,14 +759,45 @@
       "issue": "20231",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
-      "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
-      "hasAnnouncement": false,
-      "hasImages": false
+      "photos": [
+        "/car-images/52609/photos/1.jpg",
+        "/car-images/52609/photos/2.jpg",
+        "/car-images/52609/photos/3.jpg",
+        "/car-images/52609/photos/4.jpg",
+        "/car-images/52609/photos/5.jpg",
+        "/car-images/52609/photos/6.jpg",
+        "/car-images/52609/photos/7.jpg",
+        "/car-images/52609/photos/8.jpg",
+        "/car-images/52609/photos/9.jpg",
+        "/car-images/52609/photos/10.jpg",
+        "/car-images/52609/photos/11.jpg"
+      ],
+      "report": [
+        "/car-images/52609/report/1.jpg",
+        "/car-images/52609/report/2.jpg",
+        "/car-images/52609/report/3.jpg",
+        "/car-images/52609/report/4.jpg"
+      ],
+      "announcement": [
+        "/car-images/52609/announcement/1.jpg"
+      ],
+      "images": [
+        "/car-images/52609/photos/1.jpg",
+        "/car-images/52609/photos/2.jpg",
+        "/car-images/52609/photos/3.jpg",
+        "/car-images/52609/photos/4.jpg",
+        "/car-images/52609/photos/5.jpg",
+        "/car-images/52609/photos/6.jpg",
+        "/car-images/52609/photos/7.jpg",
+        "/car-images/52609/photos/8.jpg",
+        "/car-images/52609/photos/9.jpg",
+        "/car-images/52609/photos/10.jpg",
+        "/car-images/52609/photos/11.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
+      "hasAnnouncement": true,
+      "hasImages": true
     },
     {
       "id": "52514",
@@ -1250,74 +1392,14 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52732/photos/1.jpg",
-        "/car-images/52732/photos/2.jpg",
-        "/car-images/52732/photos/3.jpg",
-        "/car-images/52732/photos/4.jpg",
-        "/car-images/52732/photos/5.jpg",
-        "/car-images/52732/photos/6.jpg",
-        "/car-images/52732/photos/7.jpg",
-        "/car-images/52732/photos/8.jpg",
-        "/car-images/52732/photos/9.jpg",
-        "/car-images/52732/photos/10.jpg",
-        "/car-images/52732/photos/11.jpg",
-        "/car-images/52732/photos/12.jpg",
-        "/car-images/52732/photos/13.jpg",
-        "/car-images/52732/photos/14.jpg",
-        "/car-images/52732/photos/15.jpg",
-        "/car-images/52732/photos/16.jpg",
-        "/car-images/52732/photos/17.jpg",
-        "/car-images/52732/photos/18.jpg",
-        "/car-images/52732/photos/19.jpg",
-        "/car-images/52732/photos/20.jpg",
-        "/car-images/52732/photos/21.jpg",
-        "/car-images/52732/photos/22.jpg",
-        "/car-images/52732/photos/23.jpg",
-        "/car-images/52732/photos/24.jpg",
-        "/car-images/52732/photos/25.jpg",
-        "/car-images/52732/photos/26.jpg",
-        "/car-images/52732/photos/27.jpg"
-      ],
-      "report": [
-        "/car-images/52732/report/1.jpg",
-        "/car-images/52732/report/2.jpg",
-        "/car-images/52732/report/3.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52732/photos/1.jpg",
-        "/car-images/52732/photos/2.jpg",
-        "/car-images/52732/photos/3.jpg",
-        "/car-images/52732/photos/4.jpg",
-        "/car-images/52732/photos/5.jpg",
-        "/car-images/52732/photos/6.jpg",
-        "/car-images/52732/photos/7.jpg",
-        "/car-images/52732/photos/8.jpg",
-        "/car-images/52732/photos/9.jpg",
-        "/car-images/52732/photos/10.jpg",
-        "/car-images/52732/photos/11.jpg",
-        "/car-images/52732/photos/12.jpg",
-        "/car-images/52732/photos/13.jpg",
-        "/car-images/52732/photos/14.jpg",
-        "/car-images/52732/photos/15.jpg",
-        "/car-images/52732/photos/16.jpg",
-        "/car-images/52732/photos/17.jpg",
-        "/car-images/52732/photos/18.jpg",
-        "/car-images/52732/photos/19.jpg",
-        "/car-images/52732/photos/20.jpg",
-        "/car-images/52732/photos/21.jpg",
-        "/car-images/52732/photos/22.jpg",
-        "/car-images/52732/photos/23.jpg",
-        "/car-images/52732/photos/24.jpg",
-        "/car-images/52732/photos/25.jpg",
-        "/car-images/52732/photos/26.jpg",
-        "/car-images/52732/photos/27.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52733",
@@ -1353,35 +1435,14 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52733/photos/1.jpg",
-        "/car-images/52733/photos/2.jpg",
-        "/car-images/52733/photos/3.jpg",
-        "/car-images/52733/photos/4.jpg",
-        "/car-images/52733/photos/5.jpg",
-        "/car-images/52733/photos/6.jpg",
-        "/car-images/52733/photos/7.jpg"
-      ],
-      "report": [
-        "/car-images/52733/report/1.jpg",
-        "/car-images/52733/report/2.jpg",
-        "/car-images/52733/report/3.jpg",
-        "/car-images/52733/report/4.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52733/photos/1.jpg",
-        "/car-images/52733/photos/2.jpg",
-        "/car-images/52733/photos/3.jpg",
-        "/car-images/52733/photos/4.jpg",
-        "/car-images/52733/photos/5.jpg",
-        "/car-images/52733/photos/6.jpg",
-        "/car-images/52733/photos/7.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "51419",
@@ -1417,40 +1478,14 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/51419/photos/1.jpg",
-        "/car-images/51419/photos/2.jpg",
-        "/car-images/51419/photos/3.jpg",
-        "/car-images/51419/photos/4.jpg",
-        "/car-images/51419/photos/5.jpg",
-        "/car-images/51419/photos/6.jpg",
-        "/car-images/51419/photos/7.jpg",
-        "/car-images/51419/photos/8.jpg",
-        "/car-images/51419/photos/9.jpg",
-        "/car-images/51419/photos/10.jpg"
-      ],
-      "report": [
-        "/car-images/51419/report/1.jpg",
-        "/car-images/51419/report/2.jpg",
-        "/car-images/51419/report/3.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/51419/photos/1.jpg",
-        "/car-images/51419/photos/2.jpg",
-        "/car-images/51419/photos/3.jpg",
-        "/car-images/51419/photos/4.jpg",
-        "/car-images/51419/photos/5.jpg",
-        "/car-images/51419/photos/6.jpg",
-        "/car-images/51419/photos/7.jpg",
-        "/car-images/51419/photos/8.jpg",
-        "/car-images/51419/photos/9.jpg",
-        "/car-images/51419/photos/10.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "48468",
@@ -1486,28 +1521,14 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/48468/photos/1.jpg",
-        "/car-images/48468/photos/2.jpg",
-        "/car-images/48468/photos/3.jpg",
-        "/car-images/48468/photos/4.jpg"
-      ],
-      "report": [
-        "/car-images/48468/report/1.jpg",
-        "/car-images/48468/report/2.jpg",
-        "/car-images/48468/report/3.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/48468/photos/1.jpg",
-        "/car-images/48468/photos/2.jpg",
-        "/car-images/48468/photos/3.jpg",
-        "/car-images/48468/photos/4.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52737",
@@ -1543,43 +1564,14 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52737/photos/1.jpg",
-        "/car-images/52737/photos/2.jpg",
-        "/car-images/52737/photos/3.jpg",
-        "/car-images/52737/photos/4.jpg",
-        "/car-images/52737/photos/5.jpg",
-        "/car-images/52737/photos/6.jpg",
-        "/car-images/52737/photos/7.jpg",
-        "/car-images/52737/photos/8.jpg",
-        "/car-images/52737/photos/9.jpg",
-        "/car-images/52737/photos/10.jpg",
-        "/car-images/52737/photos/11.jpg",
-        "/car-images/52737/photos/12.jpg"
-      ],
-      "report": [
-        "/car-images/52737/report/1.jpg",
-        "/car-images/52737/report/2.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52737/photos/1.jpg",
-        "/car-images/52737/photos/2.jpg",
-        "/car-images/52737/photos/3.jpg",
-        "/car-images/52737/photos/4.jpg",
-        "/car-images/52737/photos/5.jpg",
-        "/car-images/52737/photos/6.jpg",
-        "/car-images/52737/photos/7.jpg",
-        "/car-images/52737/photos/8.jpg",
-        "/car-images/52737/photos/9.jpg",
-        "/car-images/52737/photos/10.jpg",
-        "/car-images/52737/photos/11.jpg",
-        "/car-images/52737/photos/12.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52739",
@@ -1615,22 +1607,14 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52739/photos/1.jpg"
-      ],
-      "report": [
-        "/car-images/52739/report/1.jpg",
-        "/car-images/52739/report/2.jpg",
-        "/car-images/52739/report/3.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52739/photos/1.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52736",
@@ -1666,45 +1650,14 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52736/photos/1.jpg",
-        "/car-images/52736/photos/2.jpg",
-        "/car-images/52736/photos/3.jpg",
-        "/car-images/52736/photos/4.jpg",
-        "/car-images/52736/photos/5.jpg",
-        "/car-images/52736/photos/6.jpg",
-        "/car-images/52736/photos/7.jpg",
-        "/car-images/52736/photos/8.jpg",
-        "/car-images/52736/photos/9.jpg",
-        "/car-images/52736/photos/10.jpg",
-        "/car-images/52736/photos/11.jpg",
-        "/car-images/52736/photos/12.jpg"
-      ],
-      "report": [
-        "/car-images/52736/report/1.jpg",
-        "/car-images/52736/report/2.jpg",
-        "/car-images/52736/report/3.jpg",
-        "/car-images/52736/report/4.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52736/photos/1.jpg",
-        "/car-images/52736/photos/2.jpg",
-        "/car-images/52736/photos/3.jpg",
-        "/car-images/52736/photos/4.jpg",
-        "/car-images/52736/photos/5.jpg",
-        "/car-images/52736/photos/6.jpg",
-        "/car-images/52736/photos/7.jpg",
-        "/car-images/52736/photos/8.jpg",
-        "/car-images/52736/photos/9.jpg",
-        "/car-images/52736/photos/10.jpg",
-        "/car-images/52736/photos/11.jpg",
-        "/car-images/52736/photos/12.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52735",
@@ -2342,26 +2295,14 @@
       "issue": "20239",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52765/photos/1.jpg",
-        "/car-images/52765/photos/2.jpg"
-      ],
-      "report": [
-        "/car-images/52765/report/1.jpg",
-        "/car-images/52765/report/2.jpg",
-        "/car-images/52765/report/3.jpg",
-        "/car-images/52765/report/4.jpg",
-        "/car-images/52765/report/5.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52765/photos/1.jpg",
-        "/car-images/52765/photos/2.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52543",
@@ -2397,31 +2338,14 @@
       "issue": "20229",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52543/photos/1.jpg",
-        "/car-images/52543/photos/2.jpg",
-        "/car-images/52543/photos/3.jpg"
-      ],
-      "report": [
-        "/car-images/52543/report/1.jpg",
-        "/car-images/52543/report/2.jpg",
-        "/car-images/52543/report/3.jpg",
-        "/car-images/52543/report/4.jpg",
-        "/car-images/52543/report/5.jpg",
-        "/car-images/52543/report/6.jpg",
-        "/car-images/52543/report/7.jpg",
-        "/car-images/52543/report/8.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52543/photos/1.jpg",
-        "/car-images/52543/photos/2.jpg",
-        "/car-images/52543/photos/3.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52612",
@@ -2543,61 +2467,14 @@
       "issue": "20235",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52610/photos/1.jpg",
-        "/car-images/52610/photos/2.jpg",
-        "/car-images/52610/photos/3.jpg",
-        "/car-images/52610/photos/4.jpg",
-        "/car-images/52610/photos/5.jpg",
-        "/car-images/52610/photos/6.jpg",
-        "/car-images/52610/photos/7.jpg",
-        "/car-images/52610/photos/8.jpg",
-        "/car-images/52610/photos/9.jpg",
-        "/car-images/52610/photos/10.jpg",
-        "/car-images/52610/photos/11.jpg",
-        "/car-images/52610/photos/12.jpg",
-        "/car-images/52610/photos/13.jpg",
-        "/car-images/52610/photos/14.jpg",
-        "/car-images/52610/photos/15.jpg",
-        "/car-images/52610/photos/16.jpg",
-        "/car-images/52610/photos/17.jpg",
-        "/car-images/52610/photos/18.jpg"
-      ],
-      "report": [
-        "/car-images/52610/report/1.jpg",
-        "/car-images/52610/report/2.jpg",
-        "/car-images/52610/report/3.jpg",
-        "/car-images/52610/report/4.jpg",
-        "/car-images/52610/report/5.jpg",
-        "/car-images/52610/report/6.jpg"
-      ],
-      "announcement": [
-        "/car-images/52610/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52610/photos/1.jpg",
-        "/car-images/52610/photos/2.jpg",
-        "/car-images/52610/photos/3.jpg",
-        "/car-images/52610/photos/4.jpg",
-        "/car-images/52610/photos/5.jpg",
-        "/car-images/52610/photos/6.jpg",
-        "/car-images/52610/photos/7.jpg",
-        "/car-images/52610/photos/8.jpg",
-        "/car-images/52610/photos/9.jpg",
-        "/car-images/52610/photos/10.jpg",
-        "/car-images/52610/photos/11.jpg",
-        "/car-images/52610/photos/12.jpg",
-        "/car-images/52610/photos/13.jpg",
-        "/car-images/52610/photos/14.jpg",
-        "/car-images/52610/photos/15.jpg",
-        "/car-images/52610/photos/16.jpg",
-        "/car-images/52610/photos/17.jpg",
-        "/car-images/52610/photos/18.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "31450",
@@ -2633,30 +2510,14 @@
       "issue": "20228",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/31450/photos/1.jpg",
-        "/car-images/31450/photos/2.jpg",
-        "/car-images/31450/photos/3.jpg",
-        "/car-images/31450/photos/4.jpg"
-      ],
-      "report": [
-        "/car-images/31450/report/1.jpg",
-        "/car-images/31450/report/2.jpg",
-        "/car-images/31450/report/3.jpg"
-      ],
-      "announcement": [
-        "/car-images/31450/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/31450/photos/1.jpg",
-        "/car-images/31450/photos/2.jpg",
-        "/car-images/31450/photos/3.jpg",
-        "/car-images/31450/photos/4.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "48607",
@@ -2692,24 +2553,14 @@
       "issue": "0",
       "bids": 0,
       "status": "upcoming",
-      "photos": [
-        "/car-images/48607/photos/1.jpg",
-        "/car-images/48607/photos/2.jpg"
-      ],
-      "report": [
-        "/car-images/48607/report/1.jpg"
-      ],
-      "announcement": [
-        "/car-images/48607/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/48607/photos/1.jpg",
-        "/car-images/48607/photos/2.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52642",
@@ -2745,39 +2596,14 @@
       "issue": "7836",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52642/photos/1.jpg",
-        "/car-images/52642/photos/2.jpg",
-        "/car-images/52642/photos/3.jpg",
-        "/car-images/52642/photos/4.jpg",
-        "/car-images/52642/photos/5.jpg",
-        "/car-images/52642/photos/6.jpg",
-        "/car-images/52642/photos/7.jpg",
-        "/car-images/52642/photos/8.jpg"
-      ],
-      "report": [
-        "/car-images/52642/report/1.jpg",
-        "/car-images/52642/report/2.jpg",
-        "/car-images/52642/report/3.jpg",
-        "/car-images/52642/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/52642/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52642/photos/1.jpg",
-        "/car-images/52642/photos/2.jpg",
-        "/car-images/52642/photos/3.jpg",
-        "/car-images/52642/photos/4.jpg",
-        "/car-images/52642/photos/5.jpg",
-        "/car-images/52642/photos/6.jpg",
-        "/car-images/52642/photos/7.jpg",
-        "/car-images/52642/photos/8.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52643",
@@ -2899,31 +2725,14 @@
       "issue": "20174",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52649/photos/1.jpg",
-        "/car-images/52649/photos/2.jpg",
-        "/car-images/52649/photos/3.jpg",
-        "/car-images/52649/photos/4.jpg"
-      ],
-      "report": [
-        "/car-images/52649/report/1.jpg",
-        "/car-images/52649/report/2.jpg",
-        "/car-images/52649/report/3.jpg",
-        "/car-images/52649/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/52649/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52649/photos/1.jpg",
-        "/car-images/52649/photos/2.jpg",
-        "/car-images/52649/photos/3.jpg",
-        "/car-images/52649/photos/4.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52637",
@@ -2959,42 +2768,14 @@
       "issue": "20174",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52637/photos/1.jpg",
-        "/car-images/52637/photos/2.jpg",
-        "/car-images/52637/photos/3.jpg",
-        "/car-images/52637/photos/4.jpg",
-        "/car-images/52637/photos/5.jpg",
-        "/car-images/52637/photos/6.jpg",
-        "/car-images/52637/photos/7.jpg",
-        "/car-images/52637/photos/8.jpg",
-        "/car-images/52637/photos/9.jpg"
-      ],
-      "report": [
-        "/car-images/52637/report/1.jpg",
-        "/car-images/52637/report/2.jpg",
-        "/car-images/52637/report/3.jpg",
-        "/car-images/52637/report/4.jpg",
-        "/car-images/52637/report/5.jpg"
-      ],
-      "announcement": [
-        "/car-images/52637/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52637/photos/1.jpg",
-        "/car-images/52637/photos/2.jpg",
-        "/car-images/52637/photos/3.jpg",
-        "/car-images/52637/photos/4.jpg",
-        "/car-images/52637/photos/5.jpg",
-        "/car-images/52637/photos/6.jpg",
-        "/car-images/52637/photos/7.jpg",
-        "/car-images/52637/photos/8.jpg",
-        "/car-images/52637/photos/9.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52662",
@@ -3030,33 +2811,14 @@
       "issue": "20174",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52662/photos/1.jpg",
-        "/car-images/52662/photos/2.jpg",
-        "/car-images/52662/photos/3.jpg",
-        "/car-images/52662/photos/4.jpg",
-        "/car-images/52662/photos/5.jpg"
-      ],
-      "report": [
-        "/car-images/52662/report/1.jpg",
-        "/car-images/52662/report/2.jpg",
-        "/car-images/52662/report/3.jpg",
-        "/car-images/52662/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/52662/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52662/photos/1.jpg",
-        "/car-images/52662/photos/2.jpg",
-        "/car-images/52662/photos/3.jpg",
-        "/car-images/52662/photos/4.jpg",
-        "/car-images/52662/photos/5.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52644",
@@ -3092,36 +2854,14 @@
       "issue": "20181",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52644/photos/1.jpg",
-        "/car-images/52644/photos/2.jpg",
-        "/car-images/52644/photos/3.jpg",
-        "/car-images/52644/photos/4.jpg",
-        "/car-images/52644/photos/5.jpg",
-        "/car-images/52644/photos/6.jpg",
-        "/car-images/52644/photos/7.jpg"
-      ],
-      "report": [
-        "/car-images/52644/report/1.jpg",
-        "/car-images/52644/report/2.jpg",
-        "/car-images/52644/report/3.jpg"
-      ],
-      "announcement": [
-        "/car-images/52644/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52644/photos/1.jpg",
-        "/car-images/52644/photos/2.jpg",
-        "/car-images/52644/photos/3.jpg",
-        "/car-images/52644/photos/4.jpg",
-        "/car-images/52644/photos/5.jpg",
-        "/car-images/52644/photos/6.jpg",
-        "/car-images/52644/photos/7.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52646",
@@ -3157,50 +2897,14 @@
       "issue": "20181",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52646/photos/1.jpg",
-        "/car-images/52646/photos/2.jpg",
-        "/car-images/52646/photos/3.jpg",
-        "/car-images/52646/photos/4.jpg",
-        "/car-images/52646/photos/5.jpg",
-        "/car-images/52646/photos/6.jpg",
-        "/car-images/52646/photos/7.jpg",
-        "/car-images/52646/photos/8.jpg",
-        "/car-images/52646/photos/9.jpg",
-        "/car-images/52646/photos/10.jpg",
-        "/car-images/52646/photos/11.jpg",
-        "/car-images/52646/photos/12.jpg"
-      ],
-      "report": [
-        "/car-images/52646/report/1.jpg",
-        "/car-images/52646/report/2.jpg",
-        "/car-images/52646/report/3.jpg",
-        "/car-images/52646/report/4.jpg",
-        "/car-images/52646/report/5.jpg",
-        "/car-images/52646/report/6.jpg",
-        "/car-images/52646/report/7.jpg"
-      ],
-      "announcement": [
-        "/car-images/52646/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52646/photos/1.jpg",
-        "/car-images/52646/photos/2.jpg",
-        "/car-images/52646/photos/3.jpg",
-        "/car-images/52646/photos/4.jpg",
-        "/car-images/52646/photos/5.jpg",
-        "/car-images/52646/photos/6.jpg",
-        "/car-images/52646/photos/7.jpg",
-        "/car-images/52646/photos/8.jpg",
-        "/car-images/52646/photos/9.jpg",
-        "/car-images/52646/photos/10.jpg",
-        "/car-images/52646/photos/11.jpg",
-        "/car-images/52646/photos/12.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52647",
@@ -3236,32 +2940,14 @@
       "issue": "20181",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52647/photos/1.jpg",
-        "/car-images/52647/photos/2.jpg",
-        "/car-images/52647/photos/3.jpg",
-        "/car-images/52647/photos/4.jpg",
-        "/car-images/52647/photos/5.jpg"
-      ],
-      "report": [
-        "/car-images/52647/report/1.jpg",
-        "/car-images/52647/report/2.jpg",
-        "/car-images/52647/report/3.jpg"
-      ],
-      "announcement": [
-        "/car-images/52647/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52647/photos/1.jpg",
-        "/car-images/52647/photos/2.jpg",
-        "/car-images/52647/photos/3.jpg",
-        "/car-images/52647/photos/4.jpg",
-        "/car-images/52647/photos/5.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52648",
@@ -3297,36 +2983,14 @@
       "issue": "20181",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52648/photos/1.jpg",
-        "/car-images/52648/photos/2.jpg",
-        "/car-images/52648/photos/3.jpg",
-        "/car-images/52648/photos/4.jpg",
-        "/car-images/52648/photos/5.jpg",
-        "/car-images/52648/photos/6.jpg",
-        "/car-images/52648/photos/7.jpg"
-      ],
-      "report": [
-        "/car-images/52648/report/1.jpg",
-        "/car-images/52648/report/2.jpg",
-        "/car-images/52648/report/3.jpg"
-      ],
-      "announcement": [
-        "/car-images/52648/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52648/photos/1.jpg",
-        "/car-images/52648/photos/2.jpg",
-        "/car-images/52648/photos/3.jpg",
-        "/car-images/52648/photos/4.jpg",
-        "/car-images/52648/photos/5.jpg",
-        "/car-images/52648/photos/6.jpg",
-        "/car-images/52648/photos/7.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52641",
@@ -3491,43 +3155,14 @@
       "issue": "20225",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52639/photos/1.jpg",
-        "/car-images/52639/photos/2.jpg",
-        "/car-images/52639/photos/3.jpg",
-        "/car-images/52639/photos/4.jpg",
-        "/car-images/52639/photos/5.jpg",
-        "/car-images/52639/photos/6.jpg",
-        "/car-images/52639/photos/7.jpg",
-        "/car-images/52639/photos/8.jpg"
-      ],
-      "report": [
-        "/car-images/52639/report/1.jpg",
-        "/car-images/52639/report/2.jpg",
-        "/car-images/52639/report/3.jpg",
-        "/car-images/52639/report/4.jpg",
-        "/car-images/52639/report/5.jpg",
-        "/car-images/52639/report/6.jpg",
-        "/car-images/52639/report/7.jpg",
-        "/car-images/52639/report/8.jpg"
-      ],
-      "announcement": [
-        "/car-images/52639/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52639/photos/1.jpg",
-        "/car-images/52639/photos/2.jpg",
-        "/car-images/52639/photos/3.jpg",
-        "/car-images/52639/photos/4.jpg",
-        "/car-images/52639/photos/5.jpg",
-        "/car-images/52639/photos/6.jpg",
-        "/car-images/52639/photos/7.jpg",
-        "/car-images/52639/photos/8.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52638",
@@ -3606,37 +3241,14 @@
       "issue": "************",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/51051/photos/1.jpg",
-        "/car-images/51051/photos/2.jpg",
-        "/car-images/51051/photos/3.jpg",
-        "/car-images/51051/photos/4.jpg",
-        "/car-images/51051/photos/5.jpg",
-        "/car-images/51051/photos/6.jpg",
-        "/car-images/51051/photos/7.jpg",
-        "/car-images/51051/photos/8.jpg"
-      ],
-      "report": [
-        "/car-images/51051/report/1.jpg",
-        "/car-images/51051/report/2.jpg"
-      ],
-      "announcement": [
-        "/car-images/51051/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/51051/photos/1.jpg",
-        "/car-images/51051/photos/2.jpg",
-        "/car-images/51051/photos/3.jpg",
-        "/car-images/51051/photos/4.jpg",
-        "/car-images/51051/photos/5.jpg",
-        "/car-images/51051/photos/6.jpg",
-        "/car-images/51051/photos/7.jpg",
-        "/car-images/51051/photos/8.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "50115",
@@ -3672,57 +3284,14 @@
       "issue": "***********",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/50115/photos/1.jpg",
-        "/car-images/50115/photos/2.jpg",
-        "/car-images/50115/photos/3.jpg",
-        "/car-images/50115/photos/4.jpg",
-        "/car-images/50115/photos/5.jpg",
-        "/car-images/50115/photos/6.jpg",
-        "/car-images/50115/photos/7.jpg",
-        "/car-images/50115/photos/8.jpg",
-        "/car-images/50115/photos/9.jpg",
-        "/car-images/50115/photos/10.jpg",
-        "/car-images/50115/photos/11.jpg",
-        "/car-images/50115/photos/12.jpg",
-        "/car-images/50115/photos/13.jpg",
-        "/car-images/50115/photos/14.jpg",
-        "/car-images/50115/photos/15.jpg",
-        "/car-images/50115/photos/16.jpg",
-        "/car-images/50115/photos/17.jpg",
-        "/car-images/50115/photos/18.jpg"
-      ],
-      "report": [
-        "/car-images/50115/report/1.jpg",
-        "/car-images/50115/report/2.jpg"
-      ],
-      "announcement": [
-        "/car-images/50115/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/50115/photos/1.jpg",
-        "/car-images/50115/photos/2.jpg",
-        "/car-images/50115/photos/3.jpg",
-        "/car-images/50115/photos/4.jpg",
-        "/car-images/50115/photos/5.jpg",
-        "/car-images/50115/photos/6.jpg",
-        "/car-images/50115/photos/7.jpg",
-        "/car-images/50115/photos/8.jpg",
-        "/car-images/50115/photos/9.jpg",
-        "/car-images/50115/photos/10.jpg",
-        "/car-images/50115/photos/11.jpg",
-        "/car-images/50115/photos/12.jpg",
-        "/car-images/50115/photos/13.jpg",
-        "/car-images/50115/photos/14.jpg",
-        "/car-images/50115/photos/15.jpg",
-        "/car-images/50115/photos/16.jpg",
-        "/car-images/50115/photos/17.jpg",
-        "/car-images/50115/photos/18.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52766",
@@ -3758,31 +3327,14 @@
       "issue": "20242",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52766/photos/1.jpg",
-        "/car-images/52766/photos/2.jpg",
-        "/car-images/52766/photos/3.jpg",
-        "/car-images/52766/photos/4.jpg",
-        "/car-images/52766/photos/5.jpg"
-      ],
-      "report": [
-        "/car-images/52766/report/1.jpg",
-        "/car-images/52766/report/2.jpg"
-      ],
-      "announcement": [
-        "/car-images/52766/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52766/photos/1.jpg",
-        "/car-images/52766/photos/2.jpg",
-        "/car-images/52766/photos/3.jpg",
-        "/car-images/52766/photos/4.jpg",
-        "/car-images/52766/photos/5.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52704",
@@ -3818,28 +3370,14 @@
       "issue": "20232",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52704/photos/1.jpg",
-        "/car-images/52704/photos/2.jpg"
-      ],
-      "report": [
-        "/car-images/52704/report/1.jpg",
-        "/car-images/52704/report/2.jpg",
-        "/car-images/52704/report/3.jpg",
-        "/car-images/52704/report/4.jpg",
-        "/car-images/52704/report/5.jpg",
-        "/car-images/52704/report/6.jpg",
-        "/car-images/52704/report/7.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52704/photos/1.jpg",
-        "/car-images/52704/photos/2.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52706",
@@ -3875,29 +3413,14 @@
       "issue": "20237",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52706/photos/1.jpg",
-        "/car-images/52706/photos/2.jpg",
-        "/car-images/52706/photos/3.jpg"
-      ],
-      "report": [
-        "/car-images/52706/report/1.jpg",
-        "/car-images/52706/report/2.jpg",
-        "/car-images/52706/report/3.jpg",
-        "/car-images/52706/report/4.jpg",
-        "/car-images/52706/report/5.jpg",
-        "/car-images/52706/report/6.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52706/photos/1.jpg",
-        "/car-images/52706/photos/2.jpg",
-        "/car-images/52706/photos/3.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "52709",
