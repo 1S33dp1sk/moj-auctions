@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generatedAt": "2026-08-04T14:07:50.087Z",
-    "snapshotAt": "2026-08-04T13:41:45.148Z",
+    "generatedAt": "2026-08-04T19:43:13.719Z",
+    "snapshotAt": "2026-08-04T19:17:10.568Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 37,
     "totalCaptured": 363,
     "activeCount": 62,
-    "withPhotos": 8,
-    "withReport": 8,
-    "withAnnouncement": 8
+    "withPhotos": 9,
+    "withReport": 9,
+    "withAnnouncement": 9
   },
   "auctions": [
     {
@@ -593,14 +593,32 @@
       "issue": "20181",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
-      "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
-      "hasAnnouncement": false,
-      "hasImages": false
+      "photos": [
+        "/car-images/52647/photos/1.jpg",
+        "/car-images/52647/photos/2.jpg",
+        "/car-images/52647/photos/3.jpg",
+        "/car-images/52647/photos/4.jpg",
+        "/car-images/52647/photos/5.jpg"
+      ],
+      "report": [
+        "/car-images/52647/report/1.jpg",
+        "/car-images/52647/report/2.jpg",
+        "/car-images/52647/report/3.jpg"
+      ],
+      "announcement": [
+        "/car-images/52647/announcement/1.jpg"
+      ],
+      "images": [
+        "/car-images/52647/photos/1.jpg",
+        "/car-images/52647/photos/2.jpg",
+        "/car-images/52647/photos/3.jpg",
+        "/car-images/52647/photos/4.jpg",
+        "/car-images/52647/photos/5.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
+      "hasAnnouncement": true,
+      "hasImages": true
     },
     {
       "id": "52259",
