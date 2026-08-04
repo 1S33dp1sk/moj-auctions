@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-03T19:54:32.941Z",
-    "snapshotAt": "2026-08-03T19:16:06.208Z",
+    "generatedAt": "2026-08-04T01:50:16.595Z",
+    "snapshotAt": "2026-08-04T01:18:24.456Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
-    "pagesScraped": 37,
-    "totalCaptured": 368,
+    "pagesScraped": 36,
+    "totalCaptured": 357,
     "activeCount": 88,
-    "withPhotos": 8,
-    "withReport": 8,
+    "withPhotos": 9,
+    "withReport": 9,
     "withAnnouncement": 0
   },
   "auctions": [
@@ -507,7 +507,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "0",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [
         "/car-images/52841/photos/1.jpg"
@@ -633,16 +633,37 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "0",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
-      "photos": [],
-      "report": [],
+      "photos": [
+        "/car-images/52842/photos/1.jpg",
+        "/car-images/52842/photos/2.jpg",
+        "/car-images/52842/photos/3.jpg",
+        "/car-images/52842/photos/4.jpg",
+        "/car-images/52842/photos/5.jpg",
+        "/car-images/52842/photos/6.jpg",
+        "/car-images/52842/photos/7.jpg"
+      ],
+      "report": [
+        "/car-images/52842/report/1.jpg",
+        "/car-images/52842/report/2.jpg",
+        "/car-images/52842/report/3.jpg",
+        "/car-images/52842/report/4.jpg"
+      ],
       "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
+      "images": [
+        "/car-images/52842/photos/1.jpg",
+        "/car-images/52842/photos/2.jpg",
+        "/car-images/52842/photos/3.jpg",
+        "/car-images/52842/photos/4.jpg",
+        "/car-images/52842/photos/5.jpg",
+        "/car-images/52842/photos/6.jpg",
+        "/car-images/52842/photos/7.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
       "hasAnnouncement": false,
-      "hasImages": false
+      "hasImages": true
     },
     {
       "id": "52843",
@@ -2741,7 +2762,7 @@
       "newspaper": "الجريدة الرسمية",
       "issue": "1",
       "bids": 0,
-      "status": "upcoming",
+      "status": "live",
       "photos": [],
       "report": [],
       "announcement": [],
@@ -3343,7 +3364,7 @@
       "newspaper": "جريدة الغد",
       "issue": "7863",
       "bids": 0,
-      "status": "upcoming",
+      "status": "live",
       "photos": [],
       "report": [],
       "announcement": [],
