@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-06T13:57:07.464Z",
-    "snapshotAt": "2026-08-06T13:30:14.258Z",
+    "generatedAt": "2026-08-07T00:12:48.220Z",
+    "snapshotAt": "2026-08-06T23:48:03.634Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
-    "pagesScraped": 37,
-    "totalCaptured": 365,
+    "pagesScraped": 35,
+    "totalCaptured": 346,
     "activeCount": 63,
-    "withPhotos": 8,
-    "withReport": 8,
+    "withPhotos": 9,
+    "withReport": 9,
     "withAnnouncement": 0
   },
   "auctions": [
@@ -156,7 +156,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "20232",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [
         "/car-images/52704/photos/1.jpg",
@@ -500,14 +500,29 @@
       "issue": "20237",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
+      "photos": [
+        "/car-images/52709/photos/1.jpg",
+        "/car-images/52709/photos/2.jpg",
+        "/car-images/52709/photos/3.jpg"
+      ],
+      "report": [
+        "/car-images/52709/report/1.jpg",
+        "/car-images/52709/report/2.jpg",
+        "/car-images/52709/report/3.jpg",
+        "/car-images/52709/report/4.jpg",
+        "/car-images/52709/report/5.jpg",
+        "/car-images/52709/report/6.jpg"
+      ],
       "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
+      "images": [
+        "/car-images/52709/photos/1.jpg",
+        "/car-images/52709/photos/2.jpg",
+        "/car-images/52709/photos/3.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
       "hasAnnouncement": false,
-      "hasImages": false
+      "hasImages": true
     },
     {
       "id": "52888",
