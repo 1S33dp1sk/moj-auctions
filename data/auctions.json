@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-10T19:11:04.411Z",
-    "snapshotAt": "2026-08-10T18:40:23.962Z",
+    "generatedAt": "2026-08-11T01:17:54.020Z",
+    "snapshotAt": "2026-08-11T00:48:33.298Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
-    "pagesScraped": 35,
-    "totalCaptured": 345,
+    "pagesScraped": 34,
+    "totalCaptured": 338,
     "activeCount": 81,
-    "withPhotos": 9,
-    "withReport": 9,
+    "withPhotos": 10,
+    "withReport": 10,
     "withAnnouncement": 0
   },
   "auctions": [
@@ -702,14 +702,32 @@
       "issue": "0",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
+      "photos": [
+        "/car-images/40122/photos/1.jpg",
+        "/car-images/40122/photos/2.jpg",
+        "/car-images/40122/photos/3.jpg",
+        "/car-images/40122/photos/4.jpg",
+        "/car-images/40122/photos/5.jpg",
+        "/car-images/40122/photos/6.jpg"
+      ],
+      "report": [
+        "/car-images/40122/report/1.jpg",
+        "/car-images/40122/report/2.jpg",
+        "/car-images/40122/report/3.jpg"
+      ],
       "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
+      "images": [
+        "/car-images/40122/photos/1.jpg",
+        "/car-images/40122/photos/2.jpg",
+        "/car-images/40122/photos/3.jpg",
+        "/car-images/40122/photos/4.jpg",
+        "/car-images/40122/photos/5.jpg",
+        "/car-images/40122/photos/6.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
       "hasAnnouncement": false,
-      "hasImages": false
+      "hasImages": true
     },
     {
       "id": "52968",
@@ -915,7 +933,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "0",
-      "bids": 0,
+      "bids": 2,
       "status": "live",
       "photos": [],
       "report": [],
@@ -1259,7 +1277,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "0",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [],
       "report": [],
@@ -1431,7 +1449,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الدستور",
       "issue": "21156",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [],
       "report": [],
@@ -2593,7 +2611,7 @@
       "newspaper": "جريدة الدستور",
       "issue": "2026,21178",
       "bids": 0,
-      "status": "upcoming",
+      "status": "live",
       "photos": [],
       "report": [],
       "announcement": [],
