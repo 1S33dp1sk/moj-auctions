@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generatedAt": "2026-08-16T01:07:10.542Z",
-    "snapshotAt": "2026-08-16T00:34:33.257Z",
+    "generatedAt": "2026-08-16T06:55:06.939Z",
+    "snapshotAt": "2026-08-16T06:20:11.185Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 33,
     "totalCaptured": 330,
     "activeCount": 78,
-    "withPhotos": 10,
-    "withReport": 10,
-    "withAnnouncement": 6
+    "withPhotos": 1,
+    "withReport": 1,
+    "withAnnouncement": 0
   },
   "auctions": [
     {
@@ -99,28 +99,14 @@
       "issue": "20232",
       "bids": 51,
       "status": "live",
-      "photos": [
-        "/car-images/52704/photos/1.jpg",
-        "/car-images/52704/photos/2.jpg"
-      ],
-      "report": [
-        "/car-images/52704/report/1.jpg",
-        "/car-images/52704/report/2.jpg",
-        "/car-images/52704/report/3.jpg",
-        "/car-images/52704/report/4.jpg",
-        "/car-images/52704/report/5.jpg",
-        "/car-images/52704/report/6.jpg",
-        "/car-images/52704/report/7.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/52704/photos/1.jpg",
-        "/car-images/52704/photos/2.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "50206",
@@ -156,31 +142,14 @@
       "issue": "20230",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/50206/photos/1.jpg",
-        "/car-images/50206/photos/2.jpg",
-        "/car-images/50206/photos/3.jpg",
-        "/car-images/50206/photos/4.jpg"
-      ],
-      "report": [
-        "/car-images/50206/report/1.jpg",
-        "/car-images/50206/report/2.jpg",
-        "/car-images/50206/report/3.jpg",
-        "/car-images/50206/report/4.jpg",
-        "/car-images/50206/report/5.jpg",
-        "/car-images/50206/report/6.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/50206/photos/1.jpg",
-        "/car-images/50206/photos/2.jpg",
-        "/car-images/50206/photos/3.jpg",
-        "/car-images/50206/photos/4.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "38945",
@@ -215,26 +184,15 @@
       "newspaper": "الجريدة الرسمية",
       "issue": "0",
       "bids": 0,
-      "status": "upcoming",
-      "photos": [
-        "/car-images/38945/photos/1.jpg"
-      ],
-      "report": [
-        "/car-images/38945/report/1.jpg",
-        "/car-images/38945/report/2.jpg",
-        "/car-images/38945/report/3.jpg",
-        "/car-images/38945/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/38945/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/38945/photos/1.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "50112",
@@ -270,33 +228,14 @@
       "issue": "***********",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/50112/photos/1.jpg",
-        "/car-images/50112/photos/2.jpg",
-        "/car-images/50112/photos/3.jpg",
-        "/car-images/50112/photos/4.jpg",
-        "/car-images/50112/photos/5.jpg",
-        "/car-images/50112/photos/6.jpg"
-      ],
-      "report": [
-        "/car-images/50112/report/1.jpg",
-        "/car-images/50112/report/2.jpg"
-      ],
-      "announcement": [
-        "/car-images/50112/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/50112/photos/1.jpg",
-        "/car-images/50112/photos/2.jpg",
-        "/car-images/50112/photos/3.jpg",
-        "/car-images/50112/photos/4.jpg",
-        "/car-images/50112/photos/5.jpg",
-        "/car-images/50112/photos/6.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52983",
@@ -332,37 +271,14 @@
       "issue": "21171",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/52983/photos/1.jpg",
-        "/car-images/52983/photos/2.jpg",
-        "/car-images/52983/photos/3.jpg",
-        "/car-images/52983/photos/4.jpg",
-        "/car-images/52983/photos/5.jpg",
-        "/car-images/52983/photos/6.jpg"
-      ],
-      "report": [
-        "/car-images/52983/report/1.jpg",
-        "/car-images/52983/report/2.jpg",
-        "/car-images/52983/report/3.jpg",
-        "/car-images/52983/report/4.jpg",
-        "/car-images/52983/report/5.jpg",
-        "/car-images/52983/report/6.jpg"
-      ],
-      "announcement": [
-        "/car-images/52983/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/52983/photos/1.jpg",
-        "/car-images/52983/photos/2.jpg",
-        "/car-images/52983/photos/3.jpg",
-        "/car-images/52983/photos/4.jpg",
-        "/car-images/52983/photos/5.jpg",
-        "/car-images/52983/photos/6.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "53011",
@@ -398,41 +314,14 @@
       "issue": "7862",
       "bids": 30,
       "status": "live",
-      "photos": [
-        "/car-images/53011/photos/1.jpg",
-        "/car-images/53011/photos/2.jpg",
-        "/car-images/53011/photos/3.jpg",
-        "/car-images/53011/photos/4.jpg",
-        "/car-images/53011/photos/5.jpg",
-        "/car-images/53011/photos/6.jpg",
-        "/car-images/53011/photos/7.jpg",
-        "/car-images/53011/photos/8.jpg",
-        "/car-images/53011/photos/9.jpg",
-        "/car-images/53011/photos/10.jpg"
-      ],
-      "report": [
-        "/car-images/53011/report/1.jpg",
-        "/car-images/53011/report/2.jpg",
-        "/car-images/53011/report/3.jpg",
-        "/car-images/53011/report/4.jpg"
-      ],
+      "photos": [],
+      "report": [],
       "announcement": [],
-      "images": [
-        "/car-images/53011/photos/1.jpg",
-        "/car-images/53011/photos/2.jpg",
-        "/car-images/53011/photos/3.jpg",
-        "/car-images/53011/photos/4.jpg",
-        "/car-images/53011/photos/5.jpg",
-        "/car-images/53011/photos/6.jpg",
-        "/car-images/53011/photos/7.jpg",
-        "/car-images/53011/photos/8.jpg",
-        "/car-images/53011/photos/9.jpg",
-        "/car-images/53011/photos/10.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
       "hasAnnouncement": false,
-      "hasImages": true
+      "hasImages": false
     },
     {
       "id": "53090",
@@ -467,80 +356,15 @@
       "newspaper": "جريدة الدستور",
       "issue": "21181",
       "bids": 0,
-      "status": "upcoming",
-      "photos": [
-        "/car-images/53090/photos/1.jpg",
-        "/car-images/53090/photos/2.jpg",
-        "/car-images/53090/photos/3.jpg",
-        "/car-images/53090/photos/4.jpg",
-        "/car-images/53090/photos/5.jpg",
-        "/car-images/53090/photos/6.jpg",
-        "/car-images/53090/photos/7.jpg",
-        "/car-images/53090/photos/8.jpg",
-        "/car-images/53090/photos/9.jpg",
-        "/car-images/53090/photos/10.jpg",
-        "/car-images/53090/photos/11.jpg",
-        "/car-images/53090/photos/12.jpg",
-        "/car-images/53090/photos/13.jpg",
-        "/car-images/53090/photos/14.jpg",
-        "/car-images/53090/photos/15.jpg",
-        "/car-images/53090/photos/16.jpg",
-        "/car-images/53090/photos/17.jpg",
-        "/car-images/53090/photos/18.jpg",
-        "/car-images/53090/photos/19.jpg",
-        "/car-images/53090/photos/20.jpg",
-        "/car-images/53090/photos/21.jpg",
-        "/car-images/53090/photos/22.jpg",
-        "/car-images/53090/photos/23.jpg",
-        "/car-images/53090/photos/24.jpg",
-        "/car-images/53090/photos/25.jpg",
-        "/car-images/53090/photos/26.jpg",
-        "/car-images/53090/photos/27.jpg",
-        "/car-images/53090/photos/28.jpg"
-      ],
-      "report": [
-        "/car-images/53090/report/1.jpg",
-        "/car-images/53090/report/2.jpg",
-        "/car-images/53090/report/3.jpg",
-        "/car-images/53090/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/53090/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/53090/photos/1.jpg",
-        "/car-images/53090/photos/2.jpg",
-        "/car-images/53090/photos/3.jpg",
-        "/car-images/53090/photos/4.jpg",
-        "/car-images/53090/photos/5.jpg",
-        "/car-images/53090/photos/6.jpg",
-        "/car-images/53090/photos/7.jpg",
-        "/car-images/53090/photos/8.jpg",
-        "/car-images/53090/photos/9.jpg",
-        "/car-images/53090/photos/10.jpg",
-        "/car-images/53090/photos/11.jpg",
-        "/car-images/53090/photos/12.jpg",
-        "/car-images/53090/photos/13.jpg",
-        "/car-images/53090/photos/14.jpg",
-        "/car-images/53090/photos/15.jpg",
-        "/car-images/53090/photos/16.jpg",
-        "/car-images/53090/photos/17.jpg",
-        "/car-images/53090/photos/18.jpg",
-        "/car-images/53090/photos/19.jpg",
-        "/car-images/53090/photos/20.jpg",
-        "/car-images/53090/photos/21.jpg",
-        "/car-images/53090/photos/22.jpg",
-        "/car-images/53090/photos/23.jpg",
-        "/car-images/53090/photos/24.jpg",
-        "/car-images/53090/photos/25.jpg",
-        "/car-images/53090/photos/26.jpg",
-        "/car-images/53090/photos/27.jpg",
-        "/car-images/53090/photos/28.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "53062",
@@ -575,38 +399,15 @@
       "newspaper": "جريدة الدستور",
       "issue": "21180",
       "bids": 0,
-      "status": "upcoming",
-      "photos": [
-        "/car-images/53062/photos/1.jpg",
-        "/car-images/53062/photos/2.jpg",
-        "/car-images/53062/photos/3.jpg",
-        "/car-images/53062/photos/4.jpg",
-        "/car-images/53062/photos/5.jpg",
-        "/car-images/53062/photos/6.jpg",
-        "/car-images/53062/photos/7.jpg"
-      ],
-      "report": [
-        "/car-images/53062/report/1.jpg",
-        "/car-images/53062/report/2.jpg",
-        "/car-images/53062/report/3.jpg",
-        "/car-images/53062/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/53062/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/53062/photos/1.jpg",
-        "/car-images/53062/photos/2.jpg",
-        "/car-images/53062/photos/3.jpg",
-        "/car-images/53062/photos/4.jpg",
-        "/car-images/53062/photos/5.jpg",
-        "/car-images/53062/photos/6.jpg",
-        "/car-images/53062/photos/7.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "53068",
@@ -641,40 +442,15 @@
       "newspaper": "جريدة الدستور",
       "issue": "621180",
       "bids": 0,
-      "status": "upcoming",
-      "photos": [
-        "/car-images/53068/photos/1.jpg",
-        "/car-images/53068/photos/2.jpg",
-        "/car-images/53068/photos/3.jpg",
-        "/car-images/53068/photos/4.jpg",
-        "/car-images/53068/photos/5.jpg",
-        "/car-images/53068/photos/6.jpg",
-        "/car-images/53068/photos/7.jpg",
-        "/car-images/53068/photos/8.jpg"
-      ],
-      "report": [
-        "/car-images/53068/report/1.jpg",
-        "/car-images/53068/report/2.jpg",
-        "/car-images/53068/report/3.jpg",
-        "/car-images/53068/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/53068/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/53068/photos/1.jpg",
-        "/car-images/53068/photos/2.jpg",
-        "/car-images/53068/photos/3.jpg",
-        "/car-images/53068/photos/4.jpg",
-        "/car-images/53068/photos/5.jpg",
-        "/car-images/53068/photos/6.jpg",
-        "/car-images/53068/photos/7.jpg",
-        "/car-images/53068/photos/8.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "status": "live",
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "52948",
