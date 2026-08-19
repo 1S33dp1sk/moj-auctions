@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-08-19T12:43:20.803Z",
-    "snapshotAt": "2026-08-19T12:20:56.953Z",
+    "generatedAt": "2026-08-19T18:41:49.010Z",
+    "snapshotAt": "2026-08-19T18:16:34.394Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 34,
@@ -187,7 +187,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "0",
-      "bids": 7,
+      "bids": 29,
       "status": "live",
       "photos": [
         "/car-images/53121/photos/1.jpg",
@@ -393,7 +393,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "0",
-      "bids": 4,
+      "bids": 6,
       "status": "live",
       "photos": [
         "/car-images/53123/photos/1.jpg",
