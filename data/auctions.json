@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-20T18:40:49.424Z",
-    "snapshotAt": "2026-08-20T18:20:49.454Z",
+    "generatedAt": "2026-08-21T00:54:26.800Z",
+    "snapshotAt": "2026-08-21T00:34:57.771Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
-    "pagesScraped": 34,
-    "totalCaptured": 339,
+    "pagesScraped": 33,
+    "totalCaptured": 327,
     "activeCount": 49,
-    "withPhotos": 9,
-    "withReport": 9,
+    "withPhotos": 10,
+    "withReport": 10,
     "withAnnouncement": 3
   },
   "auctions": [
@@ -674,14 +674,46 @@
       "issue": "7873",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
+      "photos": [
+        "/car-images/53157/photos/1.jpg",
+        "/car-images/53157/photos/2.jpg",
+        "/car-images/53157/photos/3.jpg",
+        "/car-images/53157/photos/4.jpg",
+        "/car-images/53157/photos/5.jpg",
+        "/car-images/53157/photos/6.jpg",
+        "/car-images/53157/photos/7.jpg",
+        "/car-images/53157/photos/8.jpg",
+        "/car-images/53157/photos/9.jpg",
+        "/car-images/53157/photos/10.jpg",
+        "/car-images/53157/photos/11.jpg"
+      ],
+      "report": [
+        "/car-images/53157/report/1.jpg",
+        "/car-images/53157/report/2.jpg",
+        "/car-images/53157/report/3.jpg",
+        "/car-images/53157/report/4.jpg",
+        "/car-images/53157/report/5.jpg",
+        "/car-images/53157/report/6.jpg",
+        "/car-images/53157/report/7.jpg"
+      ],
       "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
+      "images": [
+        "/car-images/53157/photos/1.jpg",
+        "/car-images/53157/photos/2.jpg",
+        "/car-images/53157/photos/3.jpg",
+        "/car-images/53157/photos/4.jpg",
+        "/car-images/53157/photos/5.jpg",
+        "/car-images/53157/photos/6.jpg",
+        "/car-images/53157/photos/7.jpg",
+        "/car-images/53157/photos/8.jpg",
+        "/car-images/53157/photos/9.jpg",
+        "/car-images/53157/photos/10.jpg",
+        "/car-images/53157/photos/11.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
       "hasAnnouncement": false,
-      "hasImages": false
+      "hasImages": true
     },
     {
       "id": "53147",
