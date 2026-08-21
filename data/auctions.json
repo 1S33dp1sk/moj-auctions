@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-08-21T12:42:44.198Z",
-    "snapshotAt": "2026-08-21T12:22:01.752Z",
+    "generatedAt": "2026-08-21T18:40:58.568Z",
+    "snapshotAt": "2026-08-21T18:19:53.063Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 33,
@@ -833,7 +833,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "20257",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [],
       "report": [],
