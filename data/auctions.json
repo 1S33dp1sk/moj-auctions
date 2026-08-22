@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generatedAt": "2026-08-22T12:48:25.086Z",
-    "snapshotAt": "2026-08-22T12:15:42.376Z",
+    "generatedAt": "2026-08-22T18:40:45.682Z",
+    "snapshotAt": "2026-08-22T18:12:29.187Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 34,
     "totalCaptured": 333,
     "activeCount": 76,
-    "withPhotos": 8,
-    "withReport": 8,
+    "withPhotos": 9,
+    "withReport": 9,
     "withAnnouncement": 3
   },
   "auctions": [
@@ -602,14 +602,43 @@
       "issue": "7877",
       "bids": 0,
       "status": "live",
-      "photos": [],
-      "report": [],
+      "photos": [
+        "/car-images/53225/photos/1.jpg",
+        "/car-images/53225/photos/2.jpg",
+        "/car-images/53225/photos/3.jpg",
+        "/car-images/53225/photos/4.jpg",
+        "/car-images/53225/photos/5.jpg",
+        "/car-images/53225/photos/6.jpg",
+        "/car-images/53225/photos/7.jpg",
+        "/car-images/53225/photos/8.jpg",
+        "/car-images/53225/photos/9.jpg"
+      ],
+      "report": [
+        "/car-images/53225/report/1.jpg",
+        "/car-images/53225/report/2.jpg",
+        "/car-images/53225/report/3.jpg",
+        "/car-images/53225/report/4.jpg",
+        "/car-images/53225/report/5.jpg",
+        "/car-images/53225/report/6.jpg",
+        "/car-images/53225/report/7.jpg",
+        "/car-images/53225/report/8.jpg"
+      ],
       "announcement": [],
-      "images": [],
-      "hasPhotos": false,
-      "hasReport": false,
+      "images": [
+        "/car-images/53225/photos/1.jpg",
+        "/car-images/53225/photos/2.jpg",
+        "/car-images/53225/photos/3.jpg",
+        "/car-images/53225/photos/4.jpg",
+        "/car-images/53225/photos/5.jpg",
+        "/car-images/53225/photos/6.jpg",
+        "/car-images/53225/photos/7.jpg",
+        "/car-images/53225/photos/8.jpg",
+        "/car-images/53225/photos/9.jpg"
+      ],
+      "hasPhotos": true,
+      "hasReport": true,
       "hasAnnouncement": false,
-      "hasImages": false
+      "hasImages": true
     },
     {
       "id": "53157",
@@ -815,7 +844,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "20257",
-      "bids": 2,
+      "bids": 3,
       "status": "live",
       "photos": [],
       "report": [],
