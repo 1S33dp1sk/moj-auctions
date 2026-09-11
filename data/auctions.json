@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generatedAt": "2026-09-10T20:39:44.552Z",
-    "snapshotAt": "2026-09-10T20:10:43.063Z",
+    "generatedAt": "2026-09-11T02:16:11.726Z",
+    "snapshotAt": "2026-09-11T01:48:05.105Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 30,
-    "totalCaptured": 296,
+    "totalCaptured": 293,
     "activeCount": 76,
     "withPhotos": 11,
     "withReport": 11,
@@ -3510,7 +3510,7 @@
       "newspaper": "جريدة الرأي",
       "issue": "20288",
       "bids": 0,
-      "status": "upcoming",
+      "status": "live",
       "photos": [],
       "report": [],
       "announcement": [],
