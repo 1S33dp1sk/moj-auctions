@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generatedAt": "2026-09-15T21:04:34.474Z",
-    "snapshotAt": "2026-09-15T20:33:46.368Z",
+    "generatedAt": "2026-09-16T02:35:01.010Z",
+    "snapshotAt": "2026-09-16T02:03:13.660Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 33,
-    "totalCaptured": 327,
+    "totalCaptured": 323,
     "activeCount": 83,
-    "withPhotos": 10,
-    "withReport": 10,
-    "withAnnouncement": 10
+    "withPhotos": 9,
+    "withReport": 9,
+    "withAnnouncement": 9
   },
   "auctions": [
     {
@@ -173,7 +173,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الدستور",
       "issue": "21166",
-      "bids": 0,
+      "bids": 4,
       "status": "live",
       "photos": [
         "/car-images/53517/photos/1.jpg",
@@ -368,35 +368,14 @@
       "issue": "20253",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/53597/photos/1.jpg",
-        "/car-images/53597/photos/2.jpg",
-        "/car-images/53597/photos/3.jpg",
-        "/car-images/53597/photos/4.jpg",
-        "/car-images/53597/photos/5.jpg",
-        "/car-images/53597/photos/6.jpg"
-      ],
-      "report": [
-        "/car-images/53597/report/1.jpg",
-        "/car-images/53597/report/2.jpg",
-        "/car-images/53597/report/3.jpg",
-        "/car-images/53597/report/4.jpg"
-      ],
-      "announcement": [
-        "/car-images/53597/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/53597/photos/1.jpg",
-        "/car-images/53597/photos/2.jpg",
-        "/car-images/53597/photos/3.jpg",
-        "/car-images/53597/photos/4.jpg",
-        "/car-images/53597/photos/5.jpg",
-        "/car-images/53597/photos/6.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "53528",
@@ -430,7 +409,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "20281",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [
         "/car-images/53528/photos/1.jpg",
@@ -834,7 +813,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الدستور",
       "issue": "21201",
-      "bids": 4,
+      "bids": 5,
       "status": "live",
       "photos": [],
       "report": [],
@@ -1393,7 +1372,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الغد",
       "issue": "7894",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [],
       "report": [],
@@ -1694,7 +1673,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "الجريدة الرسمية",
       "issue": "0000",
-      "bids": 1,
+      "bids": 2,
       "status": "live",
       "photos": [],
       "report": [],
