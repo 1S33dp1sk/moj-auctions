@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generatedAt": "2026-09-17T21:07:55.224Z",
-    "snapshotAt": "2026-09-17T20:40:28.082Z",
+    "generatedAt": "2026-09-18T02:22:28.391Z",
+    "snapshotAt": "2026-09-18T01:54:36.165Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 31,
-    "totalCaptured": 309,
+    "totalCaptured": 305,
     "activeCount": 74,
-    "withPhotos": 10,
-    "withReport": 10,
-    "withAnnouncement": 4
+    "withPhotos": 9,
+    "withReport": 9,
+    "withAnnouncement": 3
   },
   "auctions": [
     {
@@ -44,7 +44,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "الجريدة الرسمية",
       "issue": "0000",
-      "bids": 2,
+      "bids": 3,
       "status": "live",
       "photos": [
         "/car-images/53197/photos/1.jpg",
@@ -519,27 +519,14 @@
       "issue": "20284",
       "bids": 0,
       "status": "live",
-      "photos": [
-        "/car-images/53631/photos/1.jpg",
-        "/car-images/53631/photos/2.jpg",
-        "/car-images/53631/photos/3.jpg"
-      ],
-      "report": [
-        "/car-images/53631/report/1.jpg",
-        "/car-images/53631/report/2.jpg"
-      ],
-      "announcement": [
-        "/car-images/53631/announcement/1.jpg"
-      ],
-      "images": [
-        "/car-images/53631/photos/1.jpg",
-        "/car-images/53631/photos/2.jpg",
-        "/car-images/53631/photos/3.jpg"
-      ],
-      "hasPhotos": true,
-      "hasReport": true,
-      "hasAnnouncement": true,
-      "hasImages": true
+      "photos": [],
+      "report": [],
+      "announcement": [],
+      "images": [],
+      "hasPhotos": false,
+      "hasReport": false,
+      "hasAnnouncement": false,
+      "hasImages": false
     },
     {
       "id": "53800",
@@ -905,7 +892,7 @@
       "newspaper": "جريدة الرأي",
       "issue": "20293",
       "bids": 0,
-      "status": "upcoming",
+      "status": "live",
       "photos": [],
       "report": [],
       "announcement": [],
@@ -1506,7 +1493,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "20265",
-      "bids": 0,
+      "bids": 2,
       "status": "live",
       "photos": [],
       "report": [],
