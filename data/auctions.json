@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generatedAt": "2026-09-18T20:37:26.499Z",
-    "snapshotAt": "2026-09-18T20:05:20.322Z",
+    "generatedAt": "2026-09-19T02:29:31.271Z",
+    "snapshotAt": "2026-09-19T01:59:09.132Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 31,
-    "totalCaptured": 305,
+    "totalCaptured": 303,
     "activeCount": 75,
     "withPhotos": 10,
     "withReport": 10,
