@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-11T21:40:28.238Z",
-    "snapshotAt": "2026-10-11T21:09:41.652Z",
+    "generatedAt": "2026-10-12T03:30:47.416Z",
+    "snapshotAt": "2026-10-12T02:59:29.279Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 33,
@@ -2359,7 +2359,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الدستور",
       "issue": "21234",
-      "bids": 0,
+      "bids": 2,
       "status": "live",
       "photos": [],
       "report": [],
