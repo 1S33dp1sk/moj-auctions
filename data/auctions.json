@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T17:26:52.194Z",
-    "snapshotAt": "2026-10-27T17:00:18.002Z",
+    "generatedAt": "2026-10-27T21:59:55.984Z",
+    "snapshotAt": "2026-10-27T21:32:59.738Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 21,
@@ -1894,7 +1894,7 @@
       "newspaper": "جريدة الغد",
       "issue": "7948",
       "bids": 0,
-      "status": "upcoming",
+      "status": "live",
       "photos": [],
       "report": [],
       "announcement": [],
