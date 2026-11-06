@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-06T13:46:23.345Z",
-    "snapshotAt": "2026-11-06T13:21:46.163Z",
+    "generatedAt": "2026-11-06T22:51:34.224Z",
+    "snapshotAt": "2026-11-06T22:28:45.861Z",
     "source": "https://auctions.moj.gov.jo/AuctionsList.aspx",
     "isSeed": false,
     "pagesScraped": 21,
@@ -130,7 +130,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "20334",
-      "bids": 0,
+      "bids": 4,
       "status": "live",
       "photos": [],
       "report": [],
@@ -1678,7 +1678,7 @@
       "officialStatus": "قيد التنفيذ",
       "newspaper": "جريدة الرأي",
       "issue": "20337",
-      "bids": 0,
+      "bids": 1,
       "status": "live",
       "photos": [],
       "report": [],
